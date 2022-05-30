@@ -21,11 +21,9 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .more {
     text-align: center;
   }
-
 }
 
 .todo {
@@ -33,7 +31,6 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-
 
 .todo__wrapper {
   display: flex;
@@ -54,7 +51,9 @@ button {
   outline: none;
 }
 
-.btn {
+.task__edit-btn,
+.task__delete-btn,
+.todo__add-task {
   background: none;
   border: 0px;
   color: #888;
@@ -64,10 +63,11 @@ button {
   cursor: pointer;
 }
 
-.btn:hover {
+.task__edit-btn:hover,
+.task__delete-btn:hover,
+.todo__add-task:hover {
   color: #3a3a3a;
 }
-
 /* Heading */
 h3,
 label[for="new-task"] {
@@ -121,7 +121,7 @@ label[for="new-task"] {
   vertical-align: middle;
 }
 
-.task__checkbox{
+.task__checkbox {
   margin: 0 10px;
 }
 
@@ -180,11 +180,11 @@ label[for="new-task"] {
   display: none;
 }
 
-.edit-mode .task__input {
+.task__edit .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.task__edit label {
   display: none;
 }
