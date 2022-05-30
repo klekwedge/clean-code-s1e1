@@ -25,7 +25,7 @@ body {
   .more {
     text-align: center;
   }
-  
+
 }
 
 .todo {
@@ -93,7 +93,7 @@ label[for="new-task"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.task__input:focus {
   color: #333;
 }
 
